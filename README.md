@@ -12,6 +12,11 @@ Our file structure is designed for simplicity, maintainability, and ease of expa
 Initializes all components of the program and orchestrates the overall program flow.
 We use TimedRobot, a simple wpilib framework that allows us to subclass it to create our main robot logic.
 
+[`physics.py`](src/physics.py)
+
+Initializes all simulated components of the program and orchestrates the additional simulation logic.
+Simulation is closely tied with existing files, so changes to all other files will likely be put into effect here.
+
 [`controls`](src/controls)
 
 Defines high-level robot behaviors and decision-making logic.  
